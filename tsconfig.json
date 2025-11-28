@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Modern JS target
+    "module": "ESNext",                        // Use ES modules
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Standard browser + ES features
+    "allowJs": true,                           // Allow JS files if needed
+    "skipLibCheck": true,                      // Skip type checking of libraries
+    "esModuleInterop": true,                   // Import compatibility
+    "allowSyntheticDefaultImports": true,
+    "strict": true,                            // Enable strict type checking
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,                   // Required for React
+    "noEmit": true,                            // Do not emit compiled JS
+    "jsx": "react-jsx",                        // Enable React 17+ JSX transform
+    "baseUrl": "src",                          // Base directory for imports
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "include": [
+    "src"                                      // Include all TS/TSX files in src/
+, "../firebase"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
